@@ -23,11 +23,13 @@ This repository contains scripts and Jupyter notebooks for the Optimal Stacking 
 * P1B_compute_stacks_allpairs.ipynb
 * P2A_plot_stacks_singlepair.ipynb
 * P2B_plot_stacks_allpairs.ipynb
+* P2C_plot_dispersion.ipynb
 
 ## 2. Python environment
 
 The scripts and notebooks rely on `seisgo` and, optionally, `stackmaster`. The key stacking functions in `stackmaster` have been incorporated in `seisgo`. These two packages could be installed from PyPI project: `pip install seisgo` (https://github.com/xtyangpsp/SeisGo) and `pip install stackmaster` (https://github.com/xtyangpsp/StackMaster). However, we recommend the users following the instructions on https://github.com/xtyangpsp/SeisGo to create a designed Python environment to avoid conflicts with other packages and/or projects.
 
+**To run P2C to compute Structural Similarity Index between dispersion images, package `scikit-image` (https://scikit-image.org/docs/stable/install.html) is required. It can be installed with `pip install scikit-image`.**
 
 ## 3. Steps to compute the cross-correlaiton data
 
@@ -43,7 +45,7 @@ All scripts in this section are under **xcorr_scripts** folder. We will refer to
 All notebooks under **plot_notebooks** should be run under the same Python environment.
 
 * step-1: compute the stacking results for all examples used in the paper, by running P1A and P1B. Because of the slow-performance of tf-PWS method, P1B would take hours to 2-3 days to run depending on the CPU performance.
-* step-2: plot all figures with notebooks P2A and P2B.
+* step-2: plot all figures with notebooks P2A, P2B, and P2C.
 
 
 ## 5. Reference
